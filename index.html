@@ -1,1 +1,51 @@
-<!-- vaultai- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VaultAI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>VaultAI</h1>
+    <p>Ask your catalog anything.</p>
+  </header>
+
+  <main>
+    <section class="upload-zone" id="dropZone">
+      <p>
+        Drag and drop files here, or
+        <label for="fileInput">browse</label>
+      </p>
+
+      <input type="file" id="fileInput" multiple hidden>
+    </section>
+
+    <section class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search files by name"
+      >
+
+      <select id="categoryFilter">
+        <option value="All">All categories</option>
+        <option value="Images">Images</option>
+        <option value="Documents">Documents</option>
+        <option value="Videos">Videos</option>
+        <option value="Audio">Audio</option>
+        <option value="Other">Other</option>
+      </select>
+    </section>
+
+    <section id="results"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
