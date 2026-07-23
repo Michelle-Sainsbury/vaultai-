@@ -1,1 +1,122 @@
-/* vaultai- styles */
+/* ===== Global Styles ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #222;
+  padding: 40px;
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+
+header {
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* ===== Upload Area ===== */
+
+.upload-zone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: 0.2s ease;
+}
+
+.upload-zone:hover {
+  border-color: #555;
+}
+
+.upload-zone.dragover {
+  border-color: #007bff;
+  background: #f0f8ff;
+}
+
+/* ===== Search & Filter ===== */
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.controls input,
+.controls select {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.controls input:focus,
+.controls select:focus {
+  outline: 2px solid #555;
+  outline-offset: 2px;
+}
+
+/* ===== Results ===== */
+
+.file-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.file-card strong {
+  font-size: 15px;
+}
+
+.file-card span {
+  color: #888;
+  font-size: 13px;
+}
+
+small {
+  color: #666;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 600px) {
+  
+  body {
+    padding: 20px;
+  }
+  
+  .controls {
+    flex-direction: column;
+  }
+  
+  .file-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+}
